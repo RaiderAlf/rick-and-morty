@@ -1,0 +1,29 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+    background: linear-gradient(to bottom, #16ffb500, #aad7cf86, #16ff3100);
+}
+
+.btnIzq {
+    position: fixed;
+    bottom: 55vh;
+    z-index: 100;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.btnDer {
+    position: fixed;
+    left: 96.5vw;
+    bottom: 55vh;
+    z-index: 100;
+    border-radius: 100px;
+    border: 1px solid transparent
+}

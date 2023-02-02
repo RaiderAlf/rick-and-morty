@@ -1,0 +1,77 @@
+.card {
+    background: linear-gradient(to top, #0d4714, #16ff3148);
+    backdrop-filter: blur(5px);
+    width: min-content;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    box-shadow: 0 0 10px #0d4714;
+}
+
+.cardImg{
+    margin-top: -1rem;
+    border-radius: 70px;
+    box-shadow: 0 0 10px white,0 0 5px black;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: all .2s linear;
+
+}
+
+.cardImg:hover{
+    filter: grayscale(0);
+    border-radius: 40px;
+}
+
+.cardName{
+    position: relative;
+    bottom: 26px;
+    left: 50px;
+    background: #09380fa7;
+    padding: .2rem .5rem;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.actBtn{
+    background: red;
+    border-radius: 20px;
+    border: 1px transparent solid;
+    position: relative;
+    left: 285px;
+    top: -5px;
+    transition: all .2s linear;
+    z-index: 1000;
+    box-shadow: 0 0 5px black;
+}
+
+.actBtn:hover{
+    border: 1px black solid;
+    cursor: pointer;
+    background: rgb(49, 0, 0);
+    color: white;
+    box-shadow: 0 0 0 black;
+}
+
+.tableInf th{
+    text-align: center;
+    padding: .1rem .5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.tableInf td {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.tableInf {
+    margin-top: -1.5rem;
+}

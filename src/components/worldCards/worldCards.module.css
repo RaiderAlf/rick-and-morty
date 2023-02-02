@@ -1,0 +1,9 @@
+.divCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+    background: linear-gradient(to bottom, #16ffb500, #aad7cf86, #16ff3100);
+    padding-top: 1rem;
+    gap: 1rem;
+}
