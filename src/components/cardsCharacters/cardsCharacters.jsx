@@ -7,21 +7,20 @@ const CardsCharacters = () => {
 
     const [character, setCharacter] = React.useState([]);
 
-    const urls = ['https://rickandmortyapi.com/api/character/'];
+    const urlRick = 'https://rickandmortyapi.com/api/character/';
 
     const fetchCharacters = (url) => {
         fetch(url)
             .then(res => res.json())
-            .then(data => {setCharacter(data.results); urls.push(data.info.next)})
+            .then(data => {setCharacter(data.results)})
+            .catch(error => console.log(error)) 
     }
 
     
     React.useEffect(() => {
-        fetchCharacters(urls.shift())
+        fetchCharacters(urlRick)
     },[])
     
-    console.log(urls)
-
     return(
         <div>
             <NavBar />
