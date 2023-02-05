@@ -24,13 +24,11 @@ const CardsCharacters = () => {
     return(
         <div>
             <NavBar />
-            <button className={Styles.btnIzq} onClick={() => alert('dont you cry no more')}><i class="fi fi-sr-angle-double-left"></i></button>
             <div className={Styles.cards}>
                 {
                     character.map(inf => <Card data={inf}/>)
                 }
             </div>
-            <button className={Styles.btnDer}><i class="fi fi-sr-angle-double-right"></i></button>
         </div>
     )
 }
