@@ -10,7 +10,7 @@ const NavBar = () => {
             <ul className={Styles.menu}>
                 <li><Link className={Styles.routeLink} to={'/characters'}>Personajes</Link></li>
                 <li><Link className={Styles.routeLink} to={'/worlds'}>Mundos</Link></li>
-                <li><Link className={Styles.routeLink} to={'/characters'}>About</Link></li>
+                <li><Link className={Styles.routeLink} to={'/about'}>About</Link></li>
             </ul>
         </div>
     )
