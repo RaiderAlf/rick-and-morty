@@ -12,6 +12,9 @@ const NavBar = () => {
                 <li><Link className={Styles.routeLink} to={'/worlds'}>Mundos</Link></li>
                 <li><Link className={Styles.routeLink} to={'/about'}>About</Link></li>
             </ul>
+            <label htmlFor="search">
+                <input className={Styles.searchIn} type="text" name='search' placeholder='Buscar ...'/>
+            </label>
         </div>
     )
 }

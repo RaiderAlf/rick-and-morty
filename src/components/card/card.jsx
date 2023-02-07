@@ -9,9 +9,13 @@ const Card = (props) => {
             <ul className={Styles.card}>
                 <li>
                     <button className={Styles.actBtn} onClick={() => alert('Boton Funcionando')}>X</button>
-                    <img className={Styles.cardImg} onClick={() => alert('Modal')} src={data.image} alt={data.name} />
+                    <img className={Styles.cardImg} onClick={() => alert('modal')} src={data.image} alt={data.name} />
                     <span className={Styles.cardName}>{data.name}</span>
                 </li>
+                <dialog>
+                    <h4>esto es un modal</h4>
+                    <button>cerrar modal</button>
+                </dialog>
                 <li>
                     <table className={Styles.tableInf}>
                         <thead>
